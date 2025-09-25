@@ -103,29 +103,7 @@ else:
     st.warning("⚠️ Please select only *two variables*.")
 
 
-def plot_stress(min_sleep):
 
-    filtered = dp[dp["sleep_quality"] >= min_sleep]
-
-
-    fig = px.scatter(filtered, 
-                     x="sleep_quality", 
-                     y="stress_level", 
-                     color="anxiety_level",   
-                     trendline="ols",         
-                     title=f"Stress level bij slaapkwaliteit ≥ {min_sleep}")
-    fig.show()
-
-
-
-
-
-
-
-filtered_df = df[(df["stress_level"] >= min_val) & (df["stress_level"] <= max_val)]
-
-
-sns.scatterplot(data=filtered_df, x="self_esteem", y="study_load")
 
 bullying_labels = [
     "never bullied",
@@ -170,6 +148,7 @@ st.pyplot(fig)
 
 
 # In[ ]:
+
 
 
 
