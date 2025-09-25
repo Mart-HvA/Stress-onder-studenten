@@ -119,7 +119,7 @@ def plot_stress(min_sleep):
 
 
 
-min_val, max_val = st.slider("Select stress range", 0, 5, (0, 5))
+
 
 
 filtered_df = df[(df["stress_level"] >= min_val) & (df["stress_level"] <= max_val)]
@@ -170,6 +170,7 @@ st.pyplot(fig)
 
 
 # In[ ]:
+
 
 
 
