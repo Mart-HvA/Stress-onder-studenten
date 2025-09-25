@@ -11,8 +11,8 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import numpy as np
 
-df1 = pd.read_csv("C:/Users/martc/Downloads/Stress_Dataset.csv")
-df2 = pd.read_csv("C:/Users/martc/Downloads/StressLevelDataset.csv")
+df1 = pd.read_csv("Stress_Dataset.csv")
+df2 = pd.read_csv("StressLevelDataset.csv")
 df = pd.concat([df1, df2], ignore_index=True)
 
 st.header("📊 Summary Statistics")
@@ -170,6 +170,7 @@ st.pyplot(fig)
 
 
 # In[ ]:
+
 
 
 
